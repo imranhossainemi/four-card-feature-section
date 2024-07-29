@@ -11,12 +11,15 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-    *{
+
+    * {
       padding: 0px;
       margin: 0px;
       font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
     }
-    .cardFeature{
+
+    .cardFeature {
       max-width: 1440px;
       height: 922px;
       display: flex;
@@ -26,115 +29,144 @@
       background-color: hsl(0,0%,98%);
       margin: 0 auto;
     }
-    .cfHead{
+
+    .cfHead {
       width: 510px;
       height: 155px;
       text-align: center;
       margin-bottom: 50px;
     }
-    .cfHead .blod{
+
+    .cfHead .blod {
       color: hsl(229, 6%, 66%);
-      font-size: 32px;
+      font-size: 31px;
     }
-    .cfHead h1{
+
+    .cfHead h2 {
       font-size: 32px;
+      color: hsl(234,12%,34%);
+      font-weight: 600;
     }
-    .cfHead p{
+
+    .cfHead p {
       color: hsl(229, 6%, 66%);
       font-size: 15px;
       margin-top: 25px;
     }
-    .cfCards{
+
+    .cfCards {
       width: 1115px;
-      height: 550px;
+      height: 535px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
-    .green, .red, .yellow, .blue{
+
+    .green, .red, .yellow, .blue {
       width: 290px;
       height: 200px;
       border-radius: 10px;
       background-color: hsl(0,0%,100%);
-      padding: 25px 30px;
+      padding: 22px 30px;
     }
-    .green{
+
+    .green {
       box-shadow: 0px 8px 8px 1px rgba(0,0,0,0.15), 0px -5px 0px -1px hsl(180, 62%, 55%);
     }
-    .red{
+
+    .red {
       box-shadow: 0px 8px 8px 1px rgba(0,0,0,0.15), 0px -5px 0px -1px hsl(0, 78%, 62%);
     }
-    .yellow{
+
+    .yellow {
       box-shadow: 0px 8px 8px 1px rgba(0,0,0,0.15), 0px -5px 0px -1px hsl(34, 97%, 64%);
     }
-    .blue{
+
+    .blue {
       box-shadow: 0px 8px 8px 1px rgba(0,0,0,0.15), 0px -5px 0px -1px hsl(212, 86%, 64%);
     }
-    
-    .card h3{
-      font-size: 25px;
+
+    .card h3 {
+      font-size: 22px;
       margin-bottom: 15px;
+      color: hsl(234,12%,34%);
     }
+
     .card p {
       color: hsl(229, 6%, 66%);
       font-size: 15px;
       margin-bottom: 40px;
     }
-    .card img{
+
+    .card img {
       float: right;
     }
-    .cfCards .cardSecTwo{
+
+    .cfCards .cardSecTwo {
       height: inherit;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
     @media screen and (max-width:900px) {
-      .cardFeature{
+      .cardFeature {
         width: 375px;
         height: 1360px;
-        justify-content: center;
+        justify-content: space-evenly;
       }
-      .cfHead{
+
+      .cfHead {
         width: 300px;
       }
-      .cfHead .blod, .cfHead h1{
+
+      .cfHead .blod {
         font-size: 22px;
+      } 
+      
+      .cfHead h2 {
+        font-size: 23px;
       }
-      .cfCards{
+
+      .cfCards {
         width: 300px;
-        height: 1000px;
+        height: 970px;
         flex-direction: column;
         justify-content: space-between;
       }
-      .green, .red, .yellow, .blue{
+
+      .green, .red, .yellow, .blue {
         width: 260px;
         height: 190px;
         padding: 15px 20px;
       }
-      .cfCards .cardSecTwo{
+
+      .cfCards .cardSecTwo {
         height: 620px;
         justify-content: space-evenly;
       }
-      .card p{
-        margin-bottom: 20px;
+
+      .card h3 {
+        font-size: 20px;
       }
+
     }
   </style>
 </head>
 <body>
-  <section class="cardFeature" role="banner">
-    <div class="cfHead" role="article">
+  <main class="cardFeature">
+    <div class="cfHead">
       <p class="blod">Reliable, efficient delivery</p>
-      <h1>Powered by Technology</h1>
+      <h2>Powered by Technology</h2>
       <p>Our Artificial Intelligence powered tools use millions of project data points 
         to ensure that your project is successful</p>
     </div>
-    <div class="cfCards" role="grid">
+    <div class="cfCards">
       <div class="cardSecOne">
         <div class="green card">
           <h3>Supervisor</h3>
@@ -162,8 +194,7 @@
         </div>
       </div>
     </div>
-
-  </section>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
